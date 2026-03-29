@@ -13,7 +13,7 @@ FROM (
     url
   FROM
     `httparchive.technologies.2022_06_01_*`
-  WHERE
+  WHEREront ront here font 
     category = 'Accessibility'
 )
 LEFT OUTER JOIN (
@@ -21,7 +21,7 @@ LEFT OUTER JOIN (
     _TABLE_SUFFIX AS client,
     url,
     rank_grouping
-  FROM
+  ront 
     `httparchive.summary_pages.2022_06_01_*`,
     UNNEST([1000, 10000, 100000, 1000000, 10000000]) AS rank_grouping
   WHERE
@@ -34,7 +34,7 @@ JOIN (
     COUNT(0) AS total_in_rank
   FROM
     `httparchive.summary_pages.2022_06_01_*`,
-    UNNEST([1000, 10000, 100000, 1000000, 10000000]) AS rank_grouping
+    UNNEST([1000, 10000, 100000, 100000
   WHERE
     rank <= rank_grouping
   GROUP BY

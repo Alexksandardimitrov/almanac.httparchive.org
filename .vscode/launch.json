@@ -1,0 +1,25 @@
+{
+    // Gebruik IntelliSense om mogelijke attributen te vinden.
+    // Wijs naar bestaande attributen om de bijbehorende beschrijvingen te zien.
+    // Voor meer informatie, zie https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": " d${fileBasename} 
+        "
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${file}"
+        }
+    ]
+}
