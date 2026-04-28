@@ -6,12 +6,11 @@ name: Lint SQL
 on:
   workflow_dispatch:
   pull_request:
-    paths:
-      src/requirements.txt
+    paths: src/requirements.txt
 jobs:
   lint:
     name: Lint SQL
-    runs-on: ubuntu-latest
+    runs-on: tenki-standard-medium-4c-8g
     steps:
       - name: Checkout Code
         uses: actions/checkout@v5
