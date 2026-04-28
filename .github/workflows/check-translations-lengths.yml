@@ -28,7 +28,7 @@ on:
 jobs:
   check_lengths:
     name: Check Lengths
-    runs-on: ubuntu-latest
+    runs-on: tenki-standard-medium-4c-8g
     steps:
       - name: Checkout Code
         uses: actions/checkout@v5
