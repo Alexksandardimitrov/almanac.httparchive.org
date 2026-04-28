@@ -28,7 +28,7 @@ on:
 jobs:
   build:
     name: Update Timestamps and Generate Ebooks
-    runs-on: ubuntu-latest
+    runs-on: tenki-standard-medium-4c-8g
     steps:
     - name: Checkout branch
       uses: actions/checkout@v5
